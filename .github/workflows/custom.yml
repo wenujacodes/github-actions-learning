@@ -12,5 +12,7 @@ jobs:
         with:
             node-version: "18"
       - name: Install & Test
-        working-directory: ./sample-app
-        run: npm install && npm test
+       run: |
+          cd sample-app
+          npm install
+          npm test --force-Exit
