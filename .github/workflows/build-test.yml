@@ -12,6 +12,10 @@ on:
 
 jobs:
   build-and-test:
+    env:
+      NODE_ENV: test
+      LOG_LEVEL: debug
+    
     name: Build and Test
     runs-on: ubuntu-latest
     
